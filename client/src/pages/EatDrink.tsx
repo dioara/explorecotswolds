@@ -48,7 +48,7 @@ export default function EatDrink() {
               Eat & Drink in Cotswolds
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed">
-              From waterfront dining to cozy cafes, discover Cotswolds's vibrant food and drink scene
+              From Michelin-starred gastropubs to cozy village inns, discover Cotswolds's exceptional food and drink scene
             </p>
           </div>
         </div>

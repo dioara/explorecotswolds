@@ -46,7 +46,7 @@ export default function Explore() {
               Explore Cotswolds
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed">
-              Discover world-class museums, stunning architecture, and unforgettable experiences in one of England's most vibrant maritime cities
+              Discover honey-stone villages, historic manor houses, stunning gardens, and unforgettable experiences in England's most beautiful countryside
             </p>
           </div>
         </div>
