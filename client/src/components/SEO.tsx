@@ -23,7 +23,7 @@ export function SEO({
   const siteUrl = typeof window !== "undefined" ? window.location.origin : "https://explorecotswolds.com";
   const currentUrl = typeof window !== "undefined" ? window.location.href : siteUrl;
   const canonical = canonicalUrl || currentUrl;
-  const fullOgImage = ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`;
+  const fullOgImage = ogImage?.startsWith("http") ? ogImage : `${siteUrl}${ogImage || "/images/cotswolds-hero.jpg"}`;
 
   useEffect(() => {
     // Update document title
