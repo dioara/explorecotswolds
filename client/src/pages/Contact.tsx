@@ -178,20 +178,20 @@ export default function Contact() {
           <div className="space-y-6">
             {[
               {
-                question: "How do I get to Cotswolds?",
-                answer: "Cotswolds is easily accessible by train, car, coach, and air. Visit our Travel Info page for detailed directions and transport options.",
+                question: "How do I get to the Cotswolds?",
+                answer: "The Cotswolds is easily accessible by car from London (2 hours), Birmingham (1 hour), or Oxford (30 minutes). Train services run to major towns like Moreton-in-Marsh and Kemble. Visit our Travel Info page for detailed directions.",
               },
               {
-                question: "What are the must-see attractions in Cotswolds?",
-                answer: "Don't miss The Deep aquarium, Cotswolds Old Town, the Humber Bridge, and the city's excellent museums. Check our Explore page for the full list.",
+                question: "What are the must-see attractions in the Cotswolds?",
+                answer: "Don't miss Blenheim Palace, the charming villages of Bibury and Bourton-on-the-Water, Sudeley Castle, and the beautiful Hidcote Manor Garden. Check our Explore page for the full list.",
               },
               {
-                question: "When is the best time to visit Cotswolds?",
-                answer: "Cotswolds is great year-round, but summer (June-August) offers the best weather and most events. Spring and autumn are perfect for fewer crowds.",
+                question: "When is the best time to visit the Cotswolds?",
+                answer: "The Cotswolds is beautiful year-round. Spring (April-May) brings wildflowers and lambing season, summer (June-August) offers the best weather, and autumn (September-October) showcases stunning foliage. Winter is quieter and perfect for cozy pub visits.",
               },
               {
-                question: "Is Cotswolds suitable for families?",
-                answer: "Absolutely! Cotswolds has many family-friendly attractions including The Deep, museums, parks, and regular events for children.",
+                question: "Is the Cotswolds suitable for families?",
+                answer: "Absolutely! The Cotswolds offers family-friendly attractions including Cotswold Wildlife Park, Birdland Park & Gardens, Cotswold Farm Park, and numerous outdoor activities. Many villages have playgrounds and family-friendly pubs.",
               },
             ].map((faq, index) => (
               <Card key={index}>

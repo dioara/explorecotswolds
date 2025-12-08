@@ -80,14 +80,15 @@ export default function TravelInfo() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">By Air</h3>
                 <p className="text-muted-foreground mb-4">
-                  Humberside Airport is 20 miles from Cotswolds. Manchester and Leeds Bradford airports are also convenient options.
+                  The nearest major airports are Birmingham (1 hour), Bristol (1.5 hours), and London Heathrow (2 hours). Gloucestershire Airport offers private flights.
                 </p>
                 <div className="text-sm text-muted-foreground">
                   <div className="font-semibold mb-1">Airports:</div>
                   <ul className="space-y-1">
-                    <li>Humberside: 30 mins</li>
-                    <li>Leeds Bradford: 1h 30m</li>
-                    <li>Manchester: 2h</li>
+                    <li>Birmingham: 1h</li>
+                    <li>Bristol: 1h 30m</li>
+                    <li>London Heathrow: 2h</li>
+                    <li>Gloucestershire: 30 mins</li>
                   </ul>
                 </div>
               </CardContent>
@@ -222,7 +223,7 @@ export default function TravelInfo() {
                     <h3 className="text-xl font-bold mb-3">Winter (December-February)</h3>
                     <p className="text-muted-foreground mb-2">Temperature: 2-8°C</p>
                     <p className="text-muted-foreground">
-                      Festive atmosphere with Christmas markets. Indoor attractions like museums and The Deep are perfect.
+                      Festive atmosphere with Christmas markets in towns like Bourton-on-the-Water. Cozy pubs, historic manor houses, and gardens offer winter charm.
                     </p>
                   </CardContent>
                 </Card>

@@ -27,8 +27,8 @@ export default function Explore() {
     <div className="min-h-screen bg-background">
       <SEO
         title="Explore Cotswolds Attractions"
-        description="Discover Cotswolds's top attractions including The Deep, museums, historic sites, and family-friendly activities. Find opening hours, prices, and visitor information."
-        keywords="Cotswolds attractions, things to do Cotswolds, Cotswolds museums, The Deep Cotswolds, Cotswolds Old Town, Cotswolds landmarks"
+        description="Discover the Cotswolds' top attractions including Blenheim Palace, charming villages, historic gardens, and family-friendly activities. Find opening hours, prices, and visitor information."
+        keywords="Cotswolds attractions, things to do Cotswolds, Blenheim Palace, Bibury, Bourton-on-the-Water, Cotswolds villages, Cotswolds gardens"
         ogImage="/images/hero_the_deep.png"
       />
       

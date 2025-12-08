@@ -243,7 +243,7 @@ export default function Partner() {
                         required
                         value={listingData.businessName}
                         onChange={(e) => setListingData({ ...listingData, businessName: e.target.value })}
-                        placeholder="The Deep Aquarium"
+                        placeholder="Cotswold Manor Hotel"
                       />
                     </div>
 
