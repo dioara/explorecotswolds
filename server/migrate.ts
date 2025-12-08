@@ -44,7 +44,8 @@ async function runMigrations() {
         phone VARCHAR(50),
         email VARCHAR(255),
         featured BOOLEAN DEFAULT FALSE,
-        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     
@@ -59,15 +60,18 @@ async function runMigrations() {
         latitude VARCHAR(50),
         longitude VARCHAR(50),
         imageUrl TEXT,
+        logo TEXT,
         openingHours TEXT,
         priceRange VARCHAR(50),
         website TEXT,
+        bookingUrl TEXT,
         phone VARCHAR(50),
         email VARCHAR(255),
         menuUrl TEXT,
         reservationUrl TEXT,
         featured BOOLEAN DEFAULT FALSE,
-        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     
@@ -82,6 +86,7 @@ async function runMigrations() {
         latitude VARCHAR(50),
         longitude VARCHAR(50),
         imageUrl TEXT,
+        logo TEXT,
         priceRange VARCHAR(50),
         amenities JSON,
         website TEXT,
@@ -89,7 +94,8 @@ async function runMigrations() {
         email VARCHAR(255),
         bookingUrl TEXT,
         featured BOOLEAN DEFAULT FALSE,
-        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     
@@ -100,13 +106,12 @@ async function runMigrations() {
         slug VARCHAR(255) NOT NULL UNIQUE,
         description TEXT,
         duration VARCHAR(100),
-        pricing TEXT,
+        price VARCHAR(100),
         imageUrl TEXT,
-        website TEXT,
-        phone VARCHAR(50),
-        email VARCHAR(255),
         bookingUrl TEXT,
-        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        featured BOOLEAN DEFAULT FALSE,
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     
@@ -122,12 +127,14 @@ async function runMigrations() {
         venue VARCHAR(255),
         address TEXT,
         imageUrl TEXT,
+        logo TEXT,
         pricing TEXT,
         website TEXT,
         phone VARCHAR(50),
         email VARCHAR(255),
         ticketUrl TEXT,
-        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     
@@ -152,7 +159,8 @@ async function runMigrations() {
         outdoor BOOLEAN DEFAULT FALSE,
         parking BOOLEAN DEFAULT FALSE,
         catering BOOLEAN DEFAULT FALSE,
-        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     
