@@ -36,7 +36,7 @@ export default function Venues() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/cotswolds_venues.png')" }}
+          style={{ backgroundImage: "url('/images/venues-hero.jpg')" }}
         >
           <div className="absolute inset-0 gradient-overlay"></div>
         </div>

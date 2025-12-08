@@ -28,7 +28,7 @@ export default function Tours() {
       <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/countryside-walk.jpg')" }}
+          style={{ backgroundImage: "url('/images/tours-hero.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.25_0.02_75)]/90 to-[oklch(0.25_0.02_75)]/70"></div>
         </div>

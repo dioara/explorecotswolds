@@ -351,6 +351,13 @@ export async function subscribeToNewsletter(email: string) {
   
   try {
     await db.insert(newsletterSubscriptions).values({ email });
+    
+    // Send notification email to site owner
+    await notifyOwner(
+      'New Newsletter Subscription',
+      `A new user has subscribed to the newsletter:\n\nEmail: ${email}`
+    );
+    
     return { success: true };
   } catch (error: any) {
     if (error.code === 'ER_DUP_ENTRY') {
