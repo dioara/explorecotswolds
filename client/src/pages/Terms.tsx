@@ -8,8 +8,8 @@ export default function Terms() {
     <div className="min-h-screen bg-background">
       <SEO
         title="Terms of Service"
-        description="Terms of Service for ExploreHull.com - Read our terms and conditions for using our website."
-        keywords="terms of service, terms and conditions, legal, ExploreHull"
+        description="Terms of Service for ExploreCotswolds.com - Read our terms and conditions for using our website."
+        keywords="terms of service, terms and conditions, legal, ExploreCotswolds"
       />
       
       <Navigation />
@@ -25,7 +25,7 @@ export default function Terms() {
             <section>
               <h2 className="text-2xl font-bold mb-4">Agreement to Terms</h2>
               <p className="leading-relaxed text-foreground/90">
-                By accessing and using ExploreHull.com (the "Website"), you accept and agree to be bound by the terms and provisions of this agreement. This Website is operated by Lampstand Consulting ("we," "our," or "us"). If you do not agree to these Terms of Service, please do not use this Website.
+                By accessing and using ExploreCotswolds.com (the "Website"), you accept and agree to be bound by the terms and provisions of this agreement. This Website is operated by Lampstand Consulting ("we," "our," or "us"). If you do not agree to these Terms of Service, please do not use this Website.
               </p>
             </section>
 

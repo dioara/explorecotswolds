@@ -14,13 +14,13 @@ export function SEO({
   title,
   description,
   keywords,
-  ogImage = "/images/hero_the_deep.png",
+  ogImage = "/images/cotswolds-hero.jpg",
   ogType = "website",
   canonicalUrl,
   structuredData,
 }: SEOProps) {
-  const fullTitle = `${title} | Explore Hull`;
-  const siteUrl = typeof window !== "undefined" ? window.location.origin : "https://explorehull.com";
+  const fullTitle = `${title} | Explore Cotswolds`;
+  const siteUrl = typeof window !== "undefined" ? window.location.origin : "https://explorecotswolds.com";
   const currentUrl = typeof window !== "undefined" ? window.location.href : siteUrl;
   const canonical = canonicalUrl || currentUrl;
   const fullOgImage = ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`;
@@ -55,7 +55,7 @@ export function SEO({
     updateMetaTag("og:type", ogType, true);
     updateMetaTag("og:url", canonical, true);
     updateMetaTag("og:image", fullOgImage, true);
-    updateMetaTag("og:site_name", "Explore Hull", true);
+    updateMetaTag("og:site_name", "Explore Cotswolds", true);
 
     // Twitter Card tags
     updateMetaTag("twitter:card", "summary_large_image");
@@ -107,8 +107,8 @@ export function generateAttractionStructuredData(attraction: {
     address: attraction.address ? {
       "@type": "PostalAddress",
       streetAddress: attraction.address,
-      addressLocality: "Hull",
-      addressRegion: "East Yorkshire",
+      addressLocality: "Cotswolds",
+      addressRegion: "Gloucestershire",
       addressCountry: "GB",
     } : undefined,
     url: attraction.website,
@@ -141,8 +141,8 @@ export function generateEventStructuredData(event: {
       name: event.location,
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Hull",
-        addressRegion: "East Yorkshire",
+        addressLocality: "Cotswolds",
+        addressRegion: "Gloucestershire",
         addressCountry: "GB",
       },
     } : undefined,
@@ -178,8 +178,8 @@ export function generateRestaurantStructuredData(restaurant: {
     address: restaurant.address ? {
       "@type": "PostalAddress",
       streetAddress: restaurant.address,
-      addressLocality: "Hull",
-      addressRegion: "East Yorkshire",
+      addressLocality: "Cotswolds",
+      addressRegion: "Gloucestershire",
       addressCountry: "GB",
     } : undefined,
     url: restaurant.website,
@@ -193,14 +193,14 @@ export function generateOrganizationStructuredData() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Explore Hull",
-    url: "https://explorehull.com",
-    logo: "https://explorehull.com/images/hero_the_deep.png",
-    description: "Your comprehensive guide to discovering Hull's attractions, events, restaurants, and experiences.",
+    name: "Explore Cotswolds",
+    url: "https://explorecotswolds.com",
+    logo: "https://explorecotswolds.com/images/cotswolds-hero.jpg",
+    description: "Your comprehensive guide to discovering Cotswolds's attractions, events, restaurants, and experiences.",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Hull",
-      addressRegion: "East Yorkshire",
+      addressLocality: "Cotswolds",
+      addressRegion: "Gloucestershire",
       addressCountry: "GB",
     },
     sameAs: [

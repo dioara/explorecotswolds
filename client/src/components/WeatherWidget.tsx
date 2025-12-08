@@ -30,7 +30,7 @@ export function WeatherWidget() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Cloud className="w-5 h-5" />
-          Hull Weather
+          Cotswolds Weather
         </CardTitle>
       </CardHeader>
       <CardContent>

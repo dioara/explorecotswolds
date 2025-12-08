@@ -55,7 +55,7 @@ export default function RestaurantDetail() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <SEO
-        title={`${restaurant.name} - Explore Hull`}
+        title={`${restaurant.name} - Explore Cotswolds`}
         description={restaurant.description}
         ogImage={restaurant.imageUrl || undefined}
         ogType="article"
@@ -76,7 +76,7 @@ export default function RestaurantDetail() {
         {/* Hero Image */}
         <div className="relative h-[60vh] w-full overflow-hidden">
           <img
-            src={restaurant.imageUrl || "/images/hull_dining_restaurant.png"}
+            src={restaurant.imageUrl || "/images/cotswolds_dining_restaurant.png"}
             alt={restaurant.name}
             className="w-full h-full object-cover"
           />

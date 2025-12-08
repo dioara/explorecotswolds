@@ -38,10 +38,10 @@ export default function Events() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Events in Hull"
-        description="Discover upcoming events, festivals, exhibitions, and entertainment in Hull. From cultural festivals to family activities, find what's on in Hull today."
-        keywords="Hull events, what's on Hull, Hull festivals, Hull exhibitions, Hull entertainment, things to do Hull"
-        ogImage="/images/hull_events_festival.png"
+        title="Events in Cotswolds"
+        description="Discover upcoming events, festivals, exhibitions, and entertainment in Cotswolds. From cultural festivals to family activities, find what's on in Cotswolds today."
+        keywords="Cotswolds events, what's on Cotswolds, Cotswolds festivals, Cotswolds exhibitions, Cotswolds entertainment, things to do Cotswolds"
+        ogImage="/images/cotswolds_events_festival.png"
       />
       
       <Navigation />
@@ -50,7 +50,7 @@ export default function Events() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hull_events_festival.png')" }}
+          style={{ backgroundImage: "url('/images/cotswolds_events_festival.png')" }}
         >
           <div className="absolute inset-0 gradient-overlay"></div>
         </div>
@@ -58,10 +58,10 @@ export default function Events() {
         <div className="container relative z-10 text-white">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              What's On in Hull
+              What's On in Cotswolds
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed">
-              From vibrant festivals to world-class exhibitions, discover the events that make Hull an exciting destination year-round
+              From vibrant festivals to world-class exhibitions, discover the events that make Cotswolds an exciting destination year-round
             </p>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function Events() {
                       <div className="flex flex-col md:flex-row">
                         <div className="relative w-full md:w-96 h-64 md:h-80 overflow-hidden flex-shrink-0">
                           <OptimizedImage 
-                            src={event.imageUrl || '/images/hull_events_festival.png'} 
+                            src={event.imageUrl || '/images/cotswolds_events_festival.png'} 
                             alt={event.title}
                             className="group-hover:scale-110 transition-transform duration-500"
                             aspectRatio="4/3"

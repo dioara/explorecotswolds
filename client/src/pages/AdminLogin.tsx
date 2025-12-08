@@ -37,7 +37,7 @@ export default function AdminLogin() {
           </div>
           <CardTitle className="text-3xl font-bold">Admin Login</CardTitle>
           <p className="text-muted-foreground">
-            Sign in to access the ExploreHull admin dashboard
+            Sign in to access the ExploreCotswolds admin dashboard
           </p>
         </CardHeader>
         <CardContent>

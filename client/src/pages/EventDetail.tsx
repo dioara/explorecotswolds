@@ -56,7 +56,7 @@ export default function EventDetail() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <SEO
-        title={`${event.title} - Explore Hull`}
+        title={`${event.title} - Explore Cotswolds`}
         description={event.description}
         ogImage={event.imageUrl || undefined}
         ogType="article"
@@ -77,7 +77,7 @@ export default function EventDetail() {
         {/* Hero Image */}
         <div className="relative h-[60vh] w-full overflow-hidden">
           <img
-            src={event.imageUrl || "/images/hull_events_festival.png"}
+            src={event.imageUrl || "/images/cotswolds_events_festival.png"}
             alt={event.title}
             className="w-full h-full object-cover"
           />

@@ -4,7 +4,7 @@ import { Slider } from "@/components/ui/slider";
 import { Radio, Play, Pause, Volume2, VolumeX, ExternalLink } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
-export function HullRadioPlayer() {
+export function CotswoldsRadioPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState([70]);
@@ -12,7 +12,7 @@ export function HullRadioPlayer() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string>("");
 
-  // Hull's 107FM stream URL (proxied through our server to avoid mixed content issues)
+  // Cotswolds's 107FM stream URL (proxied through our server to avoid mixed content issues)
   const STREAM_URL = "/api/radio/stream";
 
   useEffect(() => {
@@ -78,8 +78,8 @@ export function HullRadioPlayer() {
               )}
             </div>
             <div>
-              <div className="text-lg font-bold">Hull's 107FM</div>
-              <div className="text-xs text-muted-foreground font-normal">Local Radio for Hull</div>
+              <div className="text-lg font-bold">Cotswolds's 107FM</div>
+              <div className="text-xs text-muted-foreground font-normal">Local Radio for Cotswolds</div>
             </div>
           </div>
           <a
@@ -164,7 +164,7 @@ export function HullRadioPlayer() {
 
         {/* Info */}
         <div className="text-xs text-muted-foreground text-center pt-2 border-t space-y-1">
-          <p>Broadcasting 24/7 from Hull, East Yorkshire</p>
+          <p>Broadcasting 24/7 from Cotswolds, Gloucestershire</p>
           <p>Stream: MP3 • 128kb/s • Stereo</p>
         </div>
       </CardContent>

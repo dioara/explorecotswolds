@@ -129,8 +129,8 @@ export default function Partner() {
     <div className="min-h-screen bg-background">
       <SEO
         title="Partner With Us"
-        description="Join ExploreHull.com as a partner. Add your business listing, advertise to thousands of Hull visitors, or explore partnership opportunities."
-        keywords="Hull business listing, advertise Hull, Hull tourism partnership, promote Hull business"
+        description="Join ExploreCotswolds.com as a partner. Add your business listing, advertise to thousands of Cotswolds visitors, or explore partnership opportunities."
+        keywords="Cotswolds business listing, advertise Cotswolds, Cotswolds tourism partnership, promote Cotswolds business"
       />
       
       <Navigation />
@@ -138,9 +138,9 @@ export default function Partner() {
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[oklch(0.35_0.08_240)] to-[oklch(0.25_0.05_240)]">
         <div className="container relative z-10 text-white text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Partner With ExploreHull.com</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Partner With ExploreCotswolds.com</h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-            Reach thousands of visitors exploring Hull. List your business, advertise your services, or collaborate with us.
+            Reach thousands of visitors exploring Cotswolds. List your business, advertise your services, or collaborate with us.
           </p>
         </div>
       </section>
@@ -157,7 +157,7 @@ export default function Partner() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">High Visibility</h3>
                 <p className="text-muted-foreground">
-                  Your business will be showcased to thousands of tourists and locals searching for Hull attractions, restaurants, and accommodations.
+                  Your business will be showcased to thousands of tourists and locals searching for Cotswolds attractions, restaurants, and accommodations.
                 </p>
               </CardContent>
             </Card>
@@ -169,7 +169,7 @@ export default function Partner() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Targeted Audience</h3>
                 <p className="text-muted-foreground">
-                  Connect with visitors actively planning their Hull experience - people ready to book, dine, and explore.
+                  Connect with visitors actively planning their Cotswolds experience - people ready to book, dine, and explore.
                 </p>
               </CardContent>
             </Card>
@@ -230,7 +230,7 @@ export default function Partner() {
               <CardHeader>
                 <CardTitle className="text-2xl">Add Your Business Listing</CardTitle>
                 <p className="text-muted-foreground">
-                  Get your attraction, restaurant, hotel, or event featured on ExploreHull.com
+                  Get your attraction, restaurant, hotel, or event featured on ExploreCotswolds.com
                 </p>
               </CardHeader>
               <CardContent>
@@ -320,7 +320,7 @@ export default function Partner() {
                       required
                       value={listingData.address}
                       onChange={(e) => setListingData({ ...listingData, address: e.target.value })}
-                      placeholder="123 High Street, Hull, HU1 1AA"
+                      placeholder="123 High Street, Cotswolds, HU1 1AA"
                     />
                   </div>
 
@@ -348,9 +348,9 @@ export default function Partner() {
           {activeForm === "advertising" && (
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">Advertise With ExploreHull.com</CardTitle>
+                <CardTitle className="text-2xl">Advertise With ExploreCotswolds.com</CardTitle>
                 <p className="text-muted-foreground">
-                  Reach thousands of Hull visitors with banner ads, sponsored content, and premium placements
+                  Reach thousands of Cotswolds visitors with banner ads, sponsored content, and premium placements
                 </p>
               </CardHeader>
               <CardContent>

@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Newspaper } from "lucide-react";
 import { format } from "date-fns";
 
-export function HullNews() {
+export function CotswoldsNews() {
   const { data: articles, isLoading } = trpc.news.getLatest.useQuery({ limit: 6 });
 
   if (isLoading) {
@@ -13,7 +13,7 @@ export function HullNews() {
         <div className="container">
           <div className="flex items-center gap-3 mb-8">
             <Newspaper className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl font-bold">Latest Hull News</h2>
+            <h2 className="text-3xl font-bold">Latest Cotswolds News</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[...Array(6)].map((_, i) => (
@@ -40,7 +40,7 @@ export function HullNews() {
       <div className="container">
         <div className="flex items-center gap-3 mb-8">
           <Newspaper className="w-8 h-8 text-primary" />
-          <h2 className="text-3xl font-bold">Latest Hull News</h2>
+          <h2 className="text-3xl font-bold">Latest Cotswolds News</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article, index) => (

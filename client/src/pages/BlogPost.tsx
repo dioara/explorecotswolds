@@ -60,9 +60,9 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title={`${post.title} | Explore Hull Blog`}
+        title={`${post.title} | Explore Cotswolds Blog`}
         description={post.excerpt}
-        keywords={`Hull, ${post.category}, ${post.title}`}
+        keywords={`Cotswolds, ${post.category}, ${post.title}`}
         ogType="article"
       />
       

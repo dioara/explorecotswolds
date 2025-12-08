@@ -24,10 +24,10 @@ export default function Venues() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Event Venues in Hull"
-        description="Discover the perfect venue for your event in Hull. From elegant wedding venues to professional conference centers and corporate event spaces."
-        keywords="Hull venues, wedding venues Hull, conference centers Hull, event spaces Hull, corporate venues Hull, party venues Hull"
-        ogImage="/images/hull_venues.png"
+        title="Event Venues in Cotswolds"
+        description="Discover the perfect venue for your event in Cotswolds. From elegant wedding venues to professional conference centers and corporate event spaces."
+        keywords="Cotswolds venues, wedding venues Cotswolds, conference centers Cotswolds, event spaces Cotswolds, corporate venues Cotswolds, party venues Cotswolds"
+        ogImage="/images/cotswolds_venues.png"
       />
       
       <Navigation />
@@ -36,7 +36,7 @@ export default function Venues() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hull_venues.png')" }}
+          style={{ backgroundImage: "url('/images/cotswolds_venues.png')" }}
         >
           <div className="absolute inset-0 gradient-overlay"></div>
         </div>
@@ -44,7 +44,7 @@ export default function Venues() {
         <div className="container relative z-10 text-white">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Event Venues in Hull
+              Event Venues in Cotswolds
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed">
               From elegant wedding venues to professional conference centers, find the perfect space for your special event
@@ -108,7 +108,7 @@ export default function Venues() {
                     <Card className="overflow-hidden rounded-2xl border-border/50 hover:border-border transition-all duration-300 hover:shadow-medium hover:-translate-y-1">
                       <div className="relative h-64 overflow-hidden">
                         <OptimizedImage 
-                          src={venue.imageUrl || '/images/hull_venues.png'} 
+                          src={venue.imageUrl || '/images/cotswolds_venues.png'} 
                           alt={venue.name}
                           className="group-hover:scale-110 transition-transform duration-500"
                           aspectRatio="16/9"

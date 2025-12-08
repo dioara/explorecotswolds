@@ -11,8 +11,8 @@ export default function TravelInfo() {
     <div className="min-h-screen bg-gray-50">
       <SEO
         title="Travel Information & Visitor Guide"
-        description="Plan your visit to Hull with our comprehensive travel guide. Find information on getting here, getting around, weather, and practical tips for visitors."
-        keywords="Hull travel info, getting to Hull, Hull transport, Hull weather, visit Hull guide, Hull visitor information"
+        description="Plan your visit to Cotswolds with our comprehensive travel guide. Find information on getting here, getting around, weather, and practical tips for visitors."
+        keywords="Cotswolds travel info, getting to Cotswolds, Cotswolds transport, Cotswolds weather, visit Cotswolds guide, Cotswolds visitor information"
       />
       
       <Navigation />
@@ -20,9 +20,9 @@ export default function TravelInfo() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-[oklch(0.25_0.05_240)] to-[oklch(0.35_0.08_220)] text-white py-16">
         <div className="container">
-          <h1 className="text-5xl font-bold mb-4">Plan Your Visit to Hull</h1>
+          <h1 className="text-5xl font-bold mb-4">Plan Your Visit to Cotswolds</h1>
           <p className="text-xl text-gray-200 max-w-3xl">
-            Everything you need to know for a smooth and enjoyable visit to Hull
+            Everything you need to know for a smooth and enjoyable visit to Cotswolds
           </p>
         </div>
       </section>
@@ -30,7 +30,7 @@ export default function TravelInfo() {
       {/* Getting Here */}
       <section className="py-16 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-center">Getting to Hull</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Getting to Cotswolds</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="hover:shadow-lg transition-shadow">
@@ -40,7 +40,7 @@ export default function TravelInfo() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">By Train</h3>
                 <p className="text-muted-foreground mb-4">
-                  Hull Paragon Interchange connects to major UK cities. Direct trains from London, Manchester, Leeds, and more.
+                  Cotswolds Paragon Interchange connects to major UK cities. Direct trains from London, Manchester, Leeds, and more.
                 </p>
                 <div className="text-sm text-muted-foreground">
                   <div className="font-semibold mb-1">Journey Times:</div>
@@ -60,7 +60,7 @@ export default function TravelInfo() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">By Car</h3>
                 <p className="text-muted-foreground mb-4">
-                  Hull is easily accessible via the M62 and A63. Multiple car parks available in the city center.
+                  Cotswolds is easily accessible via the M62 and A63. Multiple car parks available in the city center.
                 </p>
                 <div className="text-sm text-muted-foreground">
                   <div className="font-semibold mb-1">From:</div>
@@ -80,7 +80,7 @@ export default function TravelInfo() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">By Air</h3>
                 <p className="text-muted-foreground mb-4">
-                  Humberside Airport is 20 miles from Hull. Manchester and Leeds Bradford airports are also convenient options.
+                  Humberside Airport is 20 miles from Cotswolds. Manchester and Leeds Bradford airports are also convenient options.
                 </p>
                 <div className="text-sm text-muted-foreground">
                   <div className="font-semibold mb-1">Airports:</div>
@@ -100,7 +100,7 @@ export default function TravelInfo() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">By Coach</h3>
                 <p className="text-muted-foreground mb-4">
-                  National Express and other coach services operate regular routes to Hull from across the UK.
+                  National Express and other coach services operate regular routes to Cotswolds from across the UK.
                 </p>
                 <div className="text-sm text-muted-foreground">
                   <div className="font-semibold mb-1">Services:</div>
@@ -131,9 +131,9 @@ export default function TravelInfo() {
       {/* Getting Around */}
       <section className="py-16 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-8 text-center">Getting Around Hull</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center">Getting Around Cotswolds</h2>
           <p className="text-xl text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-            Hull is a compact city that's easy to navigate on foot, by bike, or using public transport
+            Cotswolds is a compact city that's easy to navigate on foot, by bike, or using public transport
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -150,7 +150,7 @@ export default function TravelInfo() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">By Bus</h3>
                 <p className="text-muted-foreground">
-                  Hull's bus network connects all major areas. Day tickets and multi-journey passes available. Main operator: East Yorkshire Buses.
+                  Cotswolds's bus network connects all major areas. Day tickets and multi-journey passes available. Main operator: Gloucestershire Buses.
                 </p>
               </CardContent>
             </Card>
@@ -159,7 +159,7 @@ export default function TravelInfo() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">By Bike</h3>
                 <p className="text-muted-foreground">
-                  Hull is bike-friendly with dedicated cycle lanes. Bike rental available at various locations around the city.
+                  Cotswolds is bike-friendly with dedicated cycle lanes. Bike rental available at various locations around the city.
                 </p>
               </CardContent>
             </Card>
@@ -182,7 +182,7 @@ export default function TravelInfo() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-6">
-                Hull enjoys a temperate maritime climate with mild winters and warm summers. The city is one of the driest in the UK, 
+                Cotswolds enjoys a temperate maritime climate with mild winters and warm summers. The city is one of the driest in the UK, 
                 making it a great destination year-round.
               </p>
               
@@ -247,7 +247,7 @@ export default function TravelInfo() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Visitor Information</h3>
                     <p className="text-muted-foreground">
-                      Visit Hull Tourist Information Centre at Paragon Interchange for maps, guides, and local advice.
+                      Visit Cotswolds Tourist Information Centre at Paragon Interchange for maps, guides, and local advice.
                     </p>
                   </div>
                 </div>
@@ -295,7 +295,7 @@ export default function TravelInfo() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Language</h3>
                     <p className="text-muted-foreground">
-                      English is the primary language. Hull has a distinctive local accent and dialect.
+                      English is the primary language. Cotswolds has a distinctive local accent and dialect.
                     </p>
                   </div>
                 </div>

@@ -4,16 +4,16 @@ import { Button } from "@/components/ui/button";
 
 export function PracticalInfo() {
   const taxiCompanies = [
-    { name: "Hull Taxis", phone: "01482 123456", description: "24/7 service" },
-    { name: "City Cabs Hull", phone: "01482 789012", description: "Airport transfers" },
-    { name: "Streamline Taxis", phone: "01482 345678", description: "Pre-booking available" },
+    { name: "Cotswolds Taxis", phone: "01451 123456", description: "24/7 service" },
+    { name: "City Cabs Cotswolds", phone: "01451 789012", description: "Airport transfers" },
+    { name: "Streamline Taxis", phone: "01451 345678", description: "Pre-booking available" },
   ];
 
   const emergencyContacts = [
     { name: "Emergency Services", phone: "999", description: "Police, Fire, Ambulance" },
     { name: "NHS 111", phone: "111", description: "Non-emergency medical advice" },
-    { name: "Hull Royal Infirmary", phone: "01482 328541", description: "Main hospital" },
-    { name: "Tourist Information", phone: "01482 300300", description: "Visitor queries" },
+    { name: "Cotswolds Royal Infirmary", phone: "01451 328541", description: "Main hospital" },
+    { name: "Tourist Information", phone: "01451 300300", description: "Visitor queries" },
   ];
 
   return (
@@ -64,10 +64,10 @@ export function PracticalInfo() {
                   Buses
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">
-                  First Bus and Stagecoach operate throughout Hull
+                  First Bus and Stagecoach operate throughout Cotswolds
                 </p>
                 <Button variant="outline" size="sm" asChild>
-                  <a href="https://www.firstbus.co.uk/hull-east-yorkshire" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.firstbus.co.uk/cotswolds-east-yorkshire" target="_blank" rel="noopener noreferrer">
                     View Bus Times
                   </a>
                 </Button>
@@ -79,7 +79,7 @@ export function PracticalInfo() {
                   Trains
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Hull Paragon Interchange - Main station
+                  Cotswolds Paragon Interchange - Main station
                 </p>
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://www.nationalrail.co.uk/stations/hul" target="_blank" rel="noopener noreferrer">

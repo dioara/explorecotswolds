@@ -73,7 +73,7 @@ export default function AttractionDetail() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <SEO
-        title={`${attraction.name} - Explore Hull`}
+        title={`${attraction.name} - Explore Cotswolds`}
         description={attraction.description}
         ogImage={images[0]}
         ogType="article"

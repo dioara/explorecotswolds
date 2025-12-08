@@ -8,8 +8,8 @@ export default function Privacy() {
     <div className="min-h-screen bg-background">
       <SEO
         title="Privacy Policy"
-        description="Privacy Policy for ExploreHull.com - Learn how we collect, use, and protect your personal information."
-        keywords="privacy policy, data protection, personal information, ExploreHull"
+        description="Privacy Policy for ExploreCotswolds.com - Learn how we collect, use, and protect your personal information."
+        keywords="privacy policy, data protection, personal information, ExploreCotswolds"
       />
       
       <Navigation />
@@ -25,7 +25,7 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-bold mb-4">Introduction</h2>
               <p className="leading-relaxed text-foreground/90">
-                ExploreHull.com ("we," "our," or "us") is operated by Lampstand Consulting. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+                ExploreCotswolds.com ("we," "our," or "us") is operated by Lampstand Consulting. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
               </p>
             </section>
 

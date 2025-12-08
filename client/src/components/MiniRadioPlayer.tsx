@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Volume2, VolumeX } from "lucide-react";
 
 /**
- * Mini radio player for Hull's 107FM
+ * Mini radio player for Cotswolds's 107FM
  * Compact design for header integration
  */
 export function MiniRadioPlayer() {
@@ -61,7 +61,7 @@ export function MiniRadioPlayer() {
         onClick={togglePlay}
         className="p-1.5 hover:bg-slate-700 rounded-full transition-colors"
         aria-label={isPlaying ? "Pause radio" : "Play radio"}
-        title={isPlaying ? "Pause Hull's 107FM" : "Play Hull's 107FM"}
+        title={isPlaying ? "Pause Cotswolds's 107FM" : "Play Cotswolds's 107FM"}
       >
         {isPlaying ? (
           <Pause className="w-4 h-4" fill="currentColor" />
@@ -73,7 +73,7 @@ export function MiniRadioPlayer() {
       {/* Station Name */}
       <div className="hidden sm:flex items-center gap-1.5">
         <div className="flex flex-col leading-tight">
-          <span className="text-xs font-semibold">Hull's 107FM</span>
+          <span className="text-xs font-semibold">Cotswolds's 107FM</span>
           {isPlaying && (
             <span className="text-[10px] text-slate-400">Live</span>
           )}

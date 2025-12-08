@@ -28,9 +28,9 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title="Hull Travel Blog & Guides"
-        description="Read our latest articles, travel guides, and insider tips for visiting Hull. Discover hidden gems, local stories, and the best ways to experience Hull."
-        keywords="Hull blog, Hull travel guide, Hull tips, things to do Hull, Hull stories, visit Hull guide"
+        title="Cotswolds Travel Blog & Guides"
+        description="Read our latest articles, travel guides, and insider tips for visiting Cotswolds. Discover hidden gems, local stories, and the best ways to experience Cotswolds."
+        keywords="Cotswolds blog, Cotswolds travel guide, Cotswolds tips, things to do Cotswolds, Cotswolds stories, visit Cotswolds guide"
         ogType="website"
       />
       
@@ -39,9 +39,9 @@ export default function Blog() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-[oklch(0.25_0.05_240)] to-[oklch(0.35_0.08_220)] text-white py-16">
         <div className="container">
-          <h1 className="text-5xl font-bold mb-4">Hull Travel Blog</h1>
+          <h1 className="text-5xl font-bold mb-4">Cotswolds Travel Blog</h1>
           <p className="text-xl text-gray-200 max-w-3xl">
-            Discover insider tips, local stories, and comprehensive guides to help you make the most of your visit to Hull
+            Discover insider tips, local stories, and comprehensive guides to help you make the most of your visit to Cotswolds
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ export default function Blog() {
                     <Card className="overflow-hidden hover:shadow-lg transition-shadow group h-full flex flex-col">
                       <div className="relative h-64 overflow-hidden">
                         <img 
-                          src={post.featuredImage || '/images/hull_old_town.png'} 
+                          src={post.featuredImage || '/images/cotswolds_old_town.png'} 
                           alt={post.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />

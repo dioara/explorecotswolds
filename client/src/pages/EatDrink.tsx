@@ -25,10 +25,10 @@ export default function EatDrink() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Eat & Drink in Hull"
-        description="Discover Hull's diverse culinary scene. From traditional British pubs to international cuisine, find the perfect dining experience in Hull's restaurants, cafes, and bars."
-        keywords="Hull restaurants, dining in Hull, Hull food, where to eat Hull, Hull cafes, Hull bars, Hull cuisine"
-        ogImage="/images/hull_dining_restaurant.png"
+        title="Eat & Drink in Cotswolds"
+        description="Discover Cotswolds's diverse culinary scene. From traditional British pubs to international cuisine, find the perfect dining experience in Cotswolds's restaurants, cafes, and bars."
+        keywords="Cotswolds restaurants, dining in Cotswolds, Cotswolds food, where to eat Cotswolds, Cotswolds cafes, Cotswolds bars, Cotswolds cuisine"
+        ogImage="/images/cotswolds_dining_restaurant.png"
       />
       
       <Navigation />
@@ -37,7 +37,7 @@ export default function EatDrink() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hull_dining_restaurant.png')" }}
+          style={{ backgroundImage: "url('/images/cotswolds_dining_restaurant.png')" }}
         >
           <div className="absolute inset-0 gradient-overlay"></div>
         </div>
@@ -45,10 +45,10 @@ export default function EatDrink() {
         <div className="container relative z-10 text-white">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Eat & Drink in Hull
+              Eat & Drink in Cotswolds
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed">
-              From waterfront dining to cozy cafes, discover Hull's vibrant food and drink scene
+              From waterfront dining to cozy cafes, discover Cotswolds's vibrant food and drink scene
             </p>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function EatDrink() {
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                               </svg>
-                              <span>${restaurant.address || 'Hull, UK'}</span>
+                              <span>${restaurant.address || 'Cotswolds, UK'}</span>
                             </div>
                             <div style="color: #0891b2; font-size: 13px; font-weight: 500; margin-bottom: 8px;">${restaurant.cuisine}</div>
                             <a href="/restaurant/${restaurant.slug}" style="display: inline-block; background: #0891b2; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 500;">View Details</a>
@@ -174,7 +174,7 @@ export default function EatDrink() {
                               </div>
                             ) : (
                               <img 
-                                src={restaurant.imageUrl || '/images/hull_dining_restaurant.png'} 
+                                src={restaurant.imageUrl || '/images/cotswolds_dining_restaurant.png'} 
                                 alt={restaurant.name}
                                 className="w-full h-full object-cover"
                               />
@@ -226,7 +226,7 @@ export default function EatDrink() {
                           </div>
                         ) : (
                           <img 
-                            src={restaurant.imageUrl || '/images/hull_dining_restaurant.png'} 
+                            src={restaurant.imageUrl || '/images/cotswolds_dining_restaurant.png'} 
                             alt={restaurant.name}
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />

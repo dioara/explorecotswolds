@@ -49,8 +49,8 @@ export default function Contact() {
     <div className="min-h-screen bg-gray-50">
       <SEO
         title="Contact Us"
-        description="Get in touch with Explore Hull. Whether you have questions, feedback, or need assistance planning your visit, we're here to help."
-        keywords="contact Hull tourism, Hull visitor inquiries, contact Explore Hull"
+        description="Get in touch with Explore Cotswolds. Whether you have questions, feedback, or need assistance planning your visit, we're here to help."
+        keywords="contact Cotswolds tourism, Cotswolds visitor inquiries, contact Explore Cotswolds"
       />
       
       <Navigation />
@@ -61,7 +61,7 @@ export default function Contact() {
           <MessageSquare className="w-16 h-16 mx-auto mb-6 text-[oklch(0.70_0.15_200)]" />
           <h1 className="text-5xl font-bold mb-4">Get in Touch</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Have a question about visiting Hull? We'd love to hear from you
+            Have a question about visiting Cotswolds? We'd love to hear from you
           </p>
         </div>
       </section>
@@ -178,20 +178,20 @@ export default function Contact() {
           <div className="space-y-6">
             {[
               {
-                question: "How do I get to Hull?",
-                answer: "Hull is easily accessible by train, car, coach, and air. Visit our Travel Info page for detailed directions and transport options.",
+                question: "How do I get to Cotswolds?",
+                answer: "Cotswolds is easily accessible by train, car, coach, and air. Visit our Travel Info page for detailed directions and transport options.",
               },
               {
-                question: "What are the must-see attractions in Hull?",
-                answer: "Don't miss The Deep aquarium, Hull Old Town, the Humber Bridge, and the city's excellent museums. Check our Explore page for the full list.",
+                question: "What are the must-see attractions in Cotswolds?",
+                answer: "Don't miss The Deep aquarium, Cotswolds Old Town, the Humber Bridge, and the city's excellent museums. Check our Explore page for the full list.",
               },
               {
-                question: "When is the best time to visit Hull?",
-                answer: "Hull is great year-round, but summer (June-August) offers the best weather and most events. Spring and autumn are perfect for fewer crowds.",
+                question: "When is the best time to visit Cotswolds?",
+                answer: "Cotswolds is great year-round, but summer (June-August) offers the best weather and most events. Spring and autumn are perfect for fewer crowds.",
               },
               {
-                question: "Is Hull suitable for families?",
-                answer: "Absolutely! Hull has many family-friendly attractions including The Deep, museums, parks, and regular events for children.",
+                question: "Is Cotswolds suitable for families?",
+                answer: "Absolutely! Cotswolds has many family-friendly attractions including The Deep, museums, parks, and regular events for children.",
               },
             ].map((faq, index) => (
               <Card key={index}>

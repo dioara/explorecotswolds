@@ -6,10 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import { HullNews } from "@/components/HullNews";
+import { CotswoldsNews } from "@/components/CotswoldsNews";
 import { WhatsOnToday } from "@/components/WhatsOnToday";
 import { CurrencyConverter } from "@/components/CurrencyConverter";
-import { HullRadioPlayer } from "@/components/HullRadioPlayer";
+import { CotswoldsRadioPlayer } from "@/components/CotswoldsRadioPlayer";
 import { AdBanner } from "@/components/AdSense";
 import { SearchAutocomplete } from "@/components/SearchAutocomplete";
 import { Link } from "wouter";
@@ -24,9 +24,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Discover Hull - Your Guide to East Yorkshire's Maritime City"
-        description="Explore Hull's world-class attractions, vibrant events, and rich maritime heritage. Plan your perfect visit to the UK's City of Culture 2017 with our comprehensive guide."
-        keywords="Hull, visit Hull, Hull attractions, Hull events, things to do Hull, Hull tourism, East Yorkshire, City of Culture"
+        title="Discover Cotswolds - Your Guide to England's Most Beautiful Countryside"
+        description="Explore the Cotswolds' charming villages, historic manor houses, and rolling countryside. Plan your perfect visit to England's Area of Outstanding Natural Beauty with our comprehensive guide."
+        keywords="Cotswolds, visit Cotswolds, Cotswolds villages, Cotswolds attractions, Cotswolds events, things to do Cotswolds, Cotswolds tourism, Gloucestershire, AONB, countryside England"
         ogType="website"
       />
       
@@ -36,7 +36,7 @@ export default function Home() {
       <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero_the_deep.png')" }}
+          style={{ backgroundImage: "url('/images/cotswolds-hero.jpg')" }}
         >
           <div className="absolute inset-0 gradient-overlay"></div>
         </div>
@@ -44,13 +44,13 @@ export default function Home() {
         <div className="container relative z-10 text-center text-white px-4">
           <div className="max-w-4xl mx-auto space-y-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight animate-fade-in">
-              Discover the Heart of
-              <span className="block mt-2 bg-gradient-to-r from-[oklch(0.65_0.12_195)] to-[oklch(0.68_0.10_55)] bg-clip-text text-transparent">
-                Maritime England
+              Discover the Beauty of
+              <span className="block mt-2 bg-gradient-to-r from-[oklch(0.72_0.12_75)] to-[oklch(0.55_0.10_145)] bg-clip-text text-transparent">
+                The Cotswolds
               </span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto text-white/90 font-light">
-              From world-class aquariums to historic landmarks, Hull offers unforgettable experiences for every traveler
+              From honey-stone villages to historic manor houses, the Cotswolds offers unforgettable experiences for every traveler
             </p>
             
             {/* Modern Search Bar with Autocomplete */}
@@ -71,11 +71,11 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
             {[
-              { icon: MapPin, label: "Attractions", href: "/explore", color: "oklch(0.65_0.12_195)" },
-              { icon: Calendar, label: "Events", href: "/events", color: "oklch(0.68_0.10_55)" },
-              { icon: Utensils, label: "Eat & Drink", href: "/eat-drink", color: "oklch(0.70_0.12_30)" },
-              { icon: Hotel, label: "Stay", href: "/stay", color: "oklch(0.22_0.04_240)" },
-              { icon: Ship, label: "Maritime Heritage", href: "/maritime", color: "oklch(0.65_0.12_195)" },
+              { icon: MapPin, label: "Attractions", href: "/explore", color: "oklch(0.55_0.10_145)" },
+              { icon: Calendar, label: "Events", href: "/events", color: "oklch(0.72_0.12_75)" },
+              { icon: Utensils, label: "Eat & Drink", href: "/eat-drink", color: "oklch(0.65_0.04_65)" },
+              { icon: Hotel, label: "Stay", href: "/stay", color: "oklch(0.45_0.08_85)" },
+              { icon: Ship, label: "Tours", href: "/tours", color: "oklch(0.55_0.10_145)" },
             ].map((item) => (
               <Link key={item.label} href={item.href} className="card-modern flex flex-col items-center gap-4 p-6 md:p-8 group">
                   <div 
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="space-y-3">
               <h2 className="text-4xl md:text-5xl font-bold">Must-See Attractions</h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Discover Hull's iconic landmarks and hidden gems
+                Discover Cotswolds's iconic landmarks and hidden gems
               </p>
             </div>
             <Button asChild variant="outline" size="lg" className="rounded-xl self-start md:self-auto">
@@ -129,7 +129,7 @@ export default function Home() {
                     <Card className="overflow-hidden rounded-2xl border-border/50 hover:border-border transition-all duration-300 hover:shadow-medium hover:-translate-y-1">
                       <div className="relative h-64 overflow-hidden">
                         <OptimizedImage
-                          src={attraction.imageUrl || '/images/hull_old_town.png'}
+                          src={attraction.imageUrl || '/images/cotswolds_old_town.png'}
                           alt={attraction.name}
                           className="group-hover:scale-110 transition-transform duration-500"
                           aspectRatio="4/3"
@@ -173,7 +173,7 @@ export default function Home() {
             <div className="space-y-3">
               <h2 className="text-4xl md:text-5xl font-bold">Upcoming Events</h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Experience Hull's vibrant cultural calendar
+                Experience Cotswolds's vibrant cultural calendar
               </p>
             </div>
             <Button asChild variant="outline" size="lg" className="rounded-xl self-start md:self-auto">
@@ -202,7 +202,7 @@ export default function Home() {
                     <Card className="overflow-hidden rounded-2xl border-border/50 hover:border-border transition-all duration-300 hover:shadow-medium hover:-translate-y-1 flex flex-col md:flex-row h-full">
                       <div className="relative w-full md:w-56 h-56 md:h-auto overflow-hidden flex-shrink-0">
                         <OptimizedImage
-                          src={event.imageUrl || '/images/hull_events_festival.png'}
+                          src={event.imageUrl || '/images/cotswolds_events_festival.png'}
                           alt={event.title}
                           className="group-hover:scale-110 transition-transform duration-500"
                           aspectRatio="1/1"
@@ -247,7 +247,7 @@ export default function Home() {
             <div className="space-y-3">
               <h2 className="text-4xl md:text-5xl font-bold">Where to Eat</h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Savor Hull's diverse culinary scene
+                Savor Cotswolds's diverse culinary scene
               </p>
             </div>
              <Button asChild variant="outline" size="lg" className="rounded-xl self-start md:self-auto">
@@ -276,7 +276,7 @@ export default function Home() {
                     <Card className="overflow-hidden rounded-2xl border-border/50 hover:border-border transition-all duration-300 hover:shadow-medium hover:-translate-y-1">
                       <div className="relative h-64 overflow-hidden">
                         <OptimizedImage
-                          src={restaurant.imageUrl || '/images/hull_dining_restaurant.png'}
+                          src={restaurant.imageUrl || '/images/cotswolds_dining_restaurant.png'}
                           alt={restaurant.name}
                           className="group-hover:scale-110 transition-transform duration-500"
                           aspectRatio="4/3"
@@ -311,8 +311,8 @@ export default function Home() {
       {/* What's On Today */}
       <WhatsOnToday />
 
-      {/* Hull News */}
-      <HullNews />
+      {/* Cotswolds News */}
+      <CotswoldsNews />
 
       {/* Newsletter CTA - Modern Design */}
       <section className="py-20 bg-gradient-to-br from-primary via-[oklch(0.28_0.05_230)] to-[oklch(0.32_0.06_220)] text-white relative overflow-hidden">
@@ -361,8 +361,8 @@ export default function Home() {
           {/* Currency Converter */}
           <CurrencyConverter />
           
-          {/* Hull Radio Player */}
-          <HullRadioPlayer />
+          {/* Cotswolds Radio Player */}
+          <CotswoldsRadioPlayer />
         </div>
       </section>
 

@@ -47,10 +47,10 @@ export default function VenueDetail() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${venue.name} | Hull Venues`}
+        title={`${venue.name} | Cotswolds Venues`}
         description={venue.description}
-        keywords={`${venue.name}, ${venue.category} venue Hull, event space Hull, ${venue.category.toLowerCase()} venues`}
-        ogImage={venue.imageUrl || '/images/hull_venues.png'}
+        keywords={`${venue.name}, ${venue.category} venue Cotswolds, event space Cotswolds, ${venue.category.toLowerCase()} venues`}
+        ogImage={venue.imageUrl || '/images/cotswolds_venues.png'}
       />
       
       <Navigation />
@@ -58,7 +58,7 @@ export default function VenueDetail() {
       {/* Hero Image */}
       <section className="relative h-[60vh] min-h-[400px]">
         <OptimizedImage 
-          src={venue.imageUrl || '/images/hull_venues.png'} 
+          src={venue.imageUrl || '/images/cotswolds_venues.png'} 
           alt={venue.name}
           className="absolute inset-0"
           aspectRatio="21/9"

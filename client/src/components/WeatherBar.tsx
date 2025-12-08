@@ -3,7 +3,7 @@ import { Cloud, CloudRain, CloudSnow, Sun, CloudDrizzle, CloudLightning } from "
 import { MiniRadioPlayer } from "@/components/MiniRadioPlayer";
 
 /**
- * Weather bar component that displays current Hull weather and date
+ * Weather bar component that displays current Cotswolds weather and date
  * Appears at the top of all pages
  */
 export function WeatherBar() {
@@ -48,7 +48,7 @@ export function WeatherBar() {
                 <div className="flex items-center gap-2">
                   {getWeatherIcon(weather.icon)}
                   <span className="font-semibold">{Math.round(weather.temp)}°C</span>
-                  <span className="text-slate-300">Hull</span>
+                  <span className="text-slate-300">Cotswolds</span>
                 </div>
                 <div className="hidden sm:block text-slate-300 capitalize">
                   {weather.description}

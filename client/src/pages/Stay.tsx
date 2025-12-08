@@ -26,10 +26,10 @@ export default function Stay() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Where to Stay in Hull"
-        description="Find the perfect accommodation in Hull. Browse hotels, B&Bs, apartments, and guesthouses near Hull's top attractions. Book your stay in Hull today."
-        keywords="Hull hotels, Hull accommodation, where to stay Hull, Hull B&B, Hull apartments, Hull lodging, book hotel Hull"
-        ogImage="/images/hull_marina_waterfront.png"
+        title="Where to Stay in Cotswolds"
+        description="Find the perfect accommodation in Cotswolds. Browse hotels, B&Bs, apartments, and guesthouses near Cotswolds's top attractions. Book your stay in Cotswolds today."
+        keywords="Cotswolds hotels, Cotswolds accommodation, where to stay Cotswolds, Cotswolds B&B, Cotswolds apartments, Cotswolds lodging, book hotel Cotswolds"
+        ogImage="/images/cotswolds_marina_waterfront.png"
       />
       
       <Navigation />
@@ -38,7 +38,7 @@ export default function Stay() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hull_marina_waterfront.png')" }}
+          style={{ backgroundImage: "url('/images/cotswolds_marina_waterfront.png')" }}
         >
           <div className="absolute inset-0 gradient-overlay"></div>
         </div>
@@ -46,10 +46,10 @@ export default function Stay() {
         <div className="container relative z-10 text-white">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Where to Stay in Hull
+              Where to Stay in Cotswolds
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed">
-              Find comfortable accommodation in the heart of Hull, close to all major attractions
+              Find comfortable accommodation in the heart of Cotswolds, close to all major attractions
             </p>
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function Stay() {
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                               </svg>
-                              <span>${accommodation.address || 'Hull, UK'}</span>
+                              <span>${accommodation.address || 'Cotswolds, UK'}</span>
                             </div>
                             <div style="color: #0891b2; font-size: 13px; font-weight: 500; margin-bottom: 8px;">${accommodation.type}</div>
                             <a href="/accommodation/${accommodation.slug}" style="display: inline-block; background: #0891b2; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 500;">View Details</a>
@@ -166,7 +166,7 @@ export default function Stay() {
                         <div className="flex gap-4 p-4">
                           <div className="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-muted">
                             <img 
-                              src={accommodation.imageUrl || '/images/hull_marina_waterfront.png'} 
+                              src={accommodation.imageUrl || '/images/cotswolds_marina_waterfront.png'} 
                               alt={accommodation.name}
                               className="w-full h-full object-cover"
                             />
@@ -218,7 +218,7 @@ export default function Stay() {
                       </div>
                     ) : (
                       <img 
-                        src={accommodation.imageUrl || '/images/hull_marina_waterfront.png'} 
+                        src={accommodation.imageUrl || '/images/cotswolds_marina_waterfront.png'} 
                         alt={accommodation.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />

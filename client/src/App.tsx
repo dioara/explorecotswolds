@@ -15,7 +15,7 @@ import EatDrink from "./pages/EatDrink";
 import Stay from "./pages/Stay";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import Maritime from "./pages/Maritime";
+import Tours from "./pages/Tours";
 import TravelInfo from "./pages/TravelInfo";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
@@ -44,7 +44,7 @@ function Router() {
       <Route path={"/venues"} component={Venues} />
       <Route path={"/blog"} component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
-      <Route path={"/maritime"} component={Maritime} />
+      <Route path={"/tours"} component={Tours} />
       <Route path={"/travel-info"} component={TravelInfo} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/privacy"} component={Privacy} />

@@ -30,14 +30,14 @@ export function BookNowButton({
     }
     
     // Add affiliate tracking parameters if needed
-    // For example, append ?ref=explorehull or &utm_source=explorehull
+    // For example, append ?ref=explorecotswolds or &utm_source=explorecotswolds
     let trackedUrl = bookingUrl;
     
     // Add tracking parameter based on URL structure
     if (trackedUrl.includes('?')) {
-      trackedUrl += '&ref=explorehull';
+      trackedUrl += '&ref=explorecotswolds';
     } else {
-      trackedUrl += '?ref=explorehull';
+      trackedUrl += '?ref=explorecotswolds';
     }
     
     // Open in new tab

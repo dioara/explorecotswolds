@@ -120,9 +120,9 @@ export default function SearchResults() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title={`Search Results for "${searchQuery}" - Explore Hull`}
-        description={`Find attractions, events, restaurants, and accommodations in Hull matching "${searchQuery}"`}
-        keywords={`Hull search, ${searchQuery}, Hull attractions, Hull events`}
+        title={`Search Results for "${searchQuery}" - Explore Cotswolds`}
+        description={`Find attractions, events, restaurants, and accommodations in Cotswolds matching "${searchQuery}"`}
+        keywords={`Cotswolds search, ${searchQuery}, Cotswolds attractions, Cotswolds events`}
       />
       
       <Navigation />
@@ -167,7 +167,7 @@ export default function SearchResults() {
               <div className="text-center py-20">
                 <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" />
                 <h2 className="text-2xl font-bold mb-2">Start Your Search</h2>
-                <p className="text-muted-foreground">Enter a search term to find attractions, events, and more in Hull</p>
+                <p className="text-muted-foreground">Enter a search term to find attractions, events, and more in Cotswolds</p>
               </div>
             ) : filteredResults && (filteredResults.attractions.length > 0 || filteredResults.events.length > 0 || filteredResults.restaurants.length > 0 || filteredResults.accommodations.length > 0) ? (
               <>
@@ -210,7 +210,7 @@ export default function SearchResults() {
                               <CardContent className="p-0">
                                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                                   <img
-                                    src={attraction.images ? JSON.parse(attraction.images as string)[0] : '/images/hull_culture_theatre.png'}
+                                    src={attraction.images ? JSON.parse(attraction.images as string)[0] : '/images/cotswolds_culture_theatre.png'}
                                     alt={attraction.name}
                                     className="w-full h-full object-cover"
                                   />
@@ -249,7 +249,7 @@ export default function SearchResults() {
                               <CardContent className="p-0">
                                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                                   <img
-                                    src={event.image || "/images/hull_events_festival.png"}
+                                    src={event.image || "/images/cotswolds_events_festival.png"}
                                     alt={event.title}
                                     className="w-full h-full object-cover"
                                   />
@@ -288,7 +288,7 @@ export default function SearchResults() {
                               <CardContent className="p-0">
                                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                                   <img
-                                    src={restaurant.images ? JSON.parse(restaurant.images as string)[0] : '/images/hull_food_festival.png'}
+                                    src={restaurant.images ? JSON.parse(restaurant.images as string)[0] : '/images/cotswolds_food_festival.png'}
                                     alt={restaurant.name}
                                     className="w-full h-full object-cover"
                                   />
@@ -325,7 +325,7 @@ export default function SearchResults() {
                             <CardContent className="p-0">
                               <div className="relative h-48 overflow-hidden rounded-t-lg">
                                 <img
-                                  src={accommodation.images ? JSON.parse(accommodation.images as string)[0] : '/images/hull_marina.png'}
+                                  src={accommodation.images ? JSON.parse(accommodation.images as string)[0] : '/images/cotswolds_marina.png'}
                                   alt={accommodation.name}
                                   className="w-full h-full object-cover"
                                 />
@@ -365,7 +365,7 @@ export default function SearchResults() {
                           <CardContent className="p-0">
                             <div className="relative h-48 overflow-hidden rounded-t-lg">
                               <img
-                                src={attraction.images ? JSON.parse(attraction.images as string)[0] : '/images/hull_culture_theatre.png'}
+                                src={attraction.images ? JSON.parse(attraction.images as string)[0] : '/images/cotswolds_culture_theatre.png'}
                                 alt={attraction.name}
                                 className="w-full h-full object-cover"
                               />
@@ -398,7 +398,7 @@ export default function SearchResults() {
                           <CardContent className="p-0">
                             <div className="relative h-48 overflow-hidden rounded-t-lg">
                               <img
-                                src={event.image || "/images/hull_events_festival.png"}
+                                src={event.image || "/images/cotswolds_events_festival.png"}
                                 alt={event.title}
                                 className="w-full h-full object-cover"
                               />
@@ -431,7 +431,7 @@ export default function SearchResults() {
                           <CardContent className="p-0">
                             <div className="relative h-48 overflow-hidden rounded-t-lg">
                               <img
-                                src={restaurant.images ? JSON.parse(restaurant.images as string)[0] : '/images/hull_food_festival.png'}
+                                src={restaurant.images ? JSON.parse(restaurant.images as string)[0] : '/images/cotswolds_food_festival.png'}
                                 alt={restaurant.name}
                                 className="w-full h-full object-cover"
                               />
@@ -462,7 +462,7 @@ export default function SearchResults() {
                         <CardContent className="p-0">
                           <div className="relative h-48 overflow-hidden rounded-t-lg">
                             <img
-                              src={accommodation.images ? JSON.parse(accommodation.images as string)[0] : '/images/hull_marina.png'}
+                              src={accommodation.images ? JSON.parse(accommodation.images as string)[0] : '/images/cotswolds_marina.png'}
                               alt={accommodation.name}
                               className="w-full h-full object-cover"
                             />

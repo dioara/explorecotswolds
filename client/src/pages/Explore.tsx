@@ -26,9 +26,9 @@ export default function Explore() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Explore Hull Attractions"
-        description="Discover Hull's top attractions including The Deep, museums, historic sites, and family-friendly activities. Find opening hours, prices, and visitor information."
-        keywords="Hull attractions, things to do Hull, Hull museums, The Deep Hull, Hull Old Town, Hull landmarks"
+        title="Explore Cotswolds Attractions"
+        description="Discover Cotswolds's top attractions including The Deep, museums, historic sites, and family-friendly activities. Find opening hours, prices, and visitor information."
+        keywords="Cotswolds attractions, things to do Cotswolds, Cotswolds museums, The Deep Cotswolds, Cotswolds Old Town, Cotswolds landmarks"
         ogImage="/images/hero_the_deep.png"
       />
       
@@ -43,7 +43,7 @@ export default function Explore() {
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Explore Hull
+              Explore Cotswolds
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed">
               Discover world-class museums, stunning architecture, and unforgettable experiences in one of England's most vibrant maritime cities
@@ -146,7 +146,7 @@ export default function Explore() {
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                               </svg>
-                              <span>${attraction.address || 'Hull, UK'}</span>
+                              <span>${attraction.address || 'Cotswolds, UK'}</span>
                             </div>
                             <a href="/attraction/${attraction.slug}" style="display: inline-block; background: #0891b2; color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 500;">View Details</a>
                           </div>
@@ -170,7 +170,7 @@ export default function Explore() {
                         <div className="flex gap-4 p-4">
                           <div className="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-muted">
                             <img 
-                              src={attraction.imageUrl || '/images/hull_old_town.png'} 
+                              src={attraction.imageUrl || '/images/cotswolds_old_town.png'} 
                               alt={attraction.name}
                               className="w-full h-full object-cover"
                             />
@@ -228,7 +228,7 @@ export default function Explore() {
                         viewMode === "grid" ? "h-64" : "w-full md:w-80 h-56 md:h-auto flex-shrink-0"
                       }`}>
                         <img 
-                          src={attraction.imageUrl || '/images/hull_old_town.png'} 
+                          src={attraction.imageUrl || '/images/cotswolds_old_town.png'} 
                           alt={attraction.name}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
