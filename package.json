@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
-    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist && esbuild server/migrate.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/migrate.js && esbuild server/seed-if-empty.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/seed-if-empty.js",
     "start": "tsx server/migrate.ts && tsx server/seed-if-empty.ts && NODE_ENV=production node dist/index.js",
     "seed-all": "tsx server/cotswolds-seed.ts && tsx server/seed-blog.ts",
     "check": "tsc --noEmit",
