@@ -7,7 +7,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from 'url';
 
-async function seedBlog() {
+export async function seed() {
   console.log("Seeding blog posts...");
 
   const db = await getDb();
@@ -54,11 +54,17 @@ async function seedBlog() {
     }
   }
 
-  console.log("Blog posts seeded successfully!");
-  process.exit(0);
+   console.log("Blog posts seeded successfully!");
 }
 
-seedBlog().catch((error) => {
-  console.error("Error seeding blog posts:", error);
-  process.exit(1);
-});
+// Only run if called directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  seed()
+    .catch((error) => {
+      console.error("Error seeding blog posts:", error);
+      process.exit(1);
+    })
+    .finally(() => {
+      process.exit(0);
+    });
+}

@@ -9,7 +9,7 @@ import { attractions, restaurants, accommodations, tours, events, venues } from 
  * Populates database with real Cotswolds attractions, restaurants, hotels, tours, events, and venues
  */
 
-async function seed() {
+export async function seed() {
   console.log("🌾 Starting Cotswolds database seed...");
 
   const db = await getDb();
@@ -986,11 +986,14 @@ async function seed() {
   console.log("✅ Cotswolds seed completed successfully!");
 }
 
-seed()
-  .catch((error) => {
-    console.error("❌ Seed failed:", error);
-    process.exit(1);
-  })
-  .finally(() => {
-    process.exit(0);
-  });
+// Only run if called directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  seed()
+    .catch((error) => {
+      console.error("❌ Seed failed:", error);
+      process.exit(1);
+    })
+    .finally(() => {
+      process.exit(0);
+    });
+}
