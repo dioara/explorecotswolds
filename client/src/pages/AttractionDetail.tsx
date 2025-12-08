@@ -3,8 +3,7 @@ import { trpc } from "@/lib/trpc";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SEO, generateAttractionStructuredData } from "@/components/SEO";
-import { ReviewsSection } from "@/components/ReviewsSection";
-import { SaveToItinerary } from "@/components/SaveToItinerary";
+
 import { MapView } from "@/components/Map";
 import { AdBanner } from "@/components/AdSense";
 import { Button } from "@/components/ui/button";
@@ -291,12 +290,6 @@ export default function AttractionDetail() {
               <Card className="rounded-2xl border-border/50 shadow-soft bg-gradient-to-br from-accent/5 to-accent/10">
                 <CardContent className="p-6 space-y-4">
                   <h3 className="text-xl font-bold">Plan Your Visit</h3>
-                  <SaveToItinerary
-                    itemType="attraction"
-                    itemId={attraction.id}
-                    itemName={attraction.name}
-                    size="lg"
-                  />
                   <Button 
                     className="w-full rounded-xl shadow-sm" 
                     size="lg"
@@ -328,14 +321,7 @@ export default function AttractionDetail() {
             <AdBanner />
           </div>
 
-          {/* Reviews Section */}
-          <div className="mt-16">
-            <ReviewsSection
-              itemType="attraction"
-              itemId={attraction.id}
-              itemName={attraction.name}
-            />
-          </div>
+
         </div>
       </main>
 

@@ -14,12 +14,38 @@ import { AdBanner } from "@/components/AdSense";
 import { SearchAutocomplete } from "@/components/SearchAutocomplete";
 import { Link } from "wouter";
 import { Calendar, MapPin, Utensils, Hotel, Ship, ArrowRight, Star, Clock } from "lucide-react";
+import { useState } from "react";
+import { trpc } from "@/lib/trpc";
 
 export default function Home() {
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [newsletterMessage, setNewsletterMessage] = useState("");
   
   const { data: featuredAttractions, isLoading: attractionsLoading } = trpc.attractions.featured.useQuery({ limit: 6 });
   const { data: upcomingEvents, isLoading: eventsLoading } = trpc.events.upcoming.useQuery({ limit: 4 });
   const { data: featuredRestaurants, isLoading: restaurantsLoading } = trpc.restaurants.featured.useQuery({ limit: 3 });
+  
+  const newsletterMutation = trpc.newsletter.subscribe.useMutation({
+    onSuccess: () => {
+      setNewsletterMessage("Thank you for subscribing!");
+      setNewsletterEmail("");
+      setTimeout(() => setNewsletterMessage(""), 5000);
+    },
+    onError: (error) => {
+      setNewsletterMessage(error.message || "Failed to subscribe. Please try again.");
+      setTimeout(() => setNewsletterMessage(""), 5000);
+    },
+  });
+  
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (newsletterEmail && newsletterEmail.includes("@")) {
+      newsletterMutation.mutate({ email: newsletterEmail });
+    } else {
+      setNewsletterMessage("Please enter a valid email address.");
+      setTimeout(() => setNewsletterMessage(""), 5000);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -329,19 +355,31 @@ export default function Home() {
               </p>
             </div>
             <div className="max-w-md mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-2 flex flex-col sm:flex-row gap-2">
-                <Input 
-                  type="email" 
-                  placeholder="Enter your email" 
-                  className="bg-white/90 text-foreground border-0 rounded-xl flex-1"
-                />
-                <Button 
-                  size="lg"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium rounded-xl px-8 shadow-sm"
-                >
-                  Subscribe
-                </Button>
-              </div>
+              <form onSubmit={handleNewsletterSubmit}>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-2 flex flex-col sm:flex-row gap-2">
+                  <Input 
+                    type="email" 
+                    placeholder="Enter your email" 
+                    value={newsletterEmail}
+                    onChange={(e) => setNewsletterEmail(e.target.value)}
+                    className="bg-white/90 text-foreground border-0 rounded-xl flex-1"
+                    required
+                  />
+                  <Button 
+                    type="submit"
+                    size="lg"
+                    disabled={newsletterMutation.isPending}
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium rounded-xl px-8 shadow-sm"
+                  >
+                    {newsletterMutation.isPending ? "Subscribing..." : "Subscribe"}
+                  </Button>
+                </div>
+              </form>
+              {newsletterMessage && (
+                <p className="text-sm text-white mt-2 font-medium">
+                  {newsletterMessage}
+                </p>
+              )}
               <p className="text-sm text-white/70 mt-4">
                 We respect your privacy. Unsubscribe at any time.
               </p>
