@@ -35,6 +35,15 @@ export default function Events() {
     }
   });
 
+  // Sort by proximity to today (closest events first)
+  const sortedEvents = filteredEvents?.sort((a, b) => {
+    const dateA = new Date(a.startDate);
+    const dateB = new Date(b.startDate);
+    const diffA = Math.abs(dateA.getTime() - now.getTime());
+    const diffB = Math.abs(dateB.getTime() - now.getTime());
+    return diffA - diffB;
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -118,7 +127,7 @@ export default function Events() {
               {selectedTimeFilter} {selectedCategory === "All" ? "Events" : selectedCategory}
             </h2>
             <p className="text-muted-foreground text-lg">
-              {filteredEvents?.length || 0} {filteredEvents?.length === 1 ? 'event' : 'events'} found
+              {sortedEvents?.length || 0} {sortedEvents?.length === 1 ? 'event' : 'events'} found
             </p>
           </div>
 
@@ -136,9 +145,9 @@ export default function Events() {
                 </Card>
               ))}
             </div>
-          ) : filteredEvents && filteredEvents.length > 0 ? (
+          ) : sortedEvents && sortedEvents.length > 0 ? (
             <div className="space-y-6 md:space-y-8">
-              {filteredEvents.map((event) => (
+              {sortedEvents.map((event) => (
                 <Link key={event.id} href={`/event/${event.slug}`}>
                   <a className="block group">
                     <Card className="overflow-hidden rounded-2xl border-border/50 hover:border-border transition-all duration-300 hover:shadow-medium hover:-translate-y-1">
