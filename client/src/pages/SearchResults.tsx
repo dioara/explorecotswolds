@@ -210,7 +210,7 @@ export default function SearchResults() {
                               <CardContent className="p-0">
                                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                                   <img
-                                    src={attraction.images ? JSON.parse(attraction.images as string)[0] : '/images/cotswolds_culture_theatre.png'}
+                                    src={attraction.imageUrl || '/images/cotswolds-hero.jpg'}
                                     alt={attraction.name}
                                     className="w-full h-full object-cover"
                                   />
@@ -249,7 +249,7 @@ export default function SearchResults() {
                               <CardContent className="p-0">
                                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                                   <img
-                                    src={event.image || "/images/cotswolds_events_festival.png"}
+                                    src={event.imageUrl || "/images/cotswolds-hero.jpg"}
                                     alt={event.title}
                                     className="w-full h-full object-cover"
                                   />
@@ -288,7 +288,7 @@ export default function SearchResults() {
                               <CardContent className="p-0">
                                 <div className="relative h-48 overflow-hidden rounded-t-lg">
                                   <img
-                                    src={restaurant.images ? JSON.parse(restaurant.images as string)[0] : '/images/cotswolds_food_festival.png'}
+                                    src={restaurant.imageUrl || '/images/traditional-pub.jpg'}
                                     alt={restaurant.name}
                                     className="w-full h-full object-cover"
                                   />
@@ -325,7 +325,7 @@ export default function SearchResults() {
                             <CardContent className="p-0">
                               <div className="relative h-48 overflow-hidden rounded-t-lg">
                                 <img
-                                  src={accommodation.images ? JSON.parse(accommodation.images as string)[0] : '/images/cotswolds_marina.png'}
+                                  src={accommodation.imageUrl || '/images/honey-stone-village.jpg'}
                                   alt={accommodation.name}
                                   className="w-full h-full object-cover"
                                 />

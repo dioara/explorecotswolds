@@ -1,4 +1,7 @@
-import { db } from "./db";
+import { config } from "dotenv";
+config();
+
+import { getDb } from "./db";
 import { attractions, restaurants, accommodations, tours, events, venues } from "../drizzle/schema";
 
 /**
@@ -8,6 +11,12 @@ import { attractions, restaurants, accommodations, tours, events, venues } from 
 
 async function seed() {
   console.log("🌾 Starting Cotswolds database seed...");
+
+  const db = await getDb();
+  if (!db) {
+    console.error("❌ Database not available");
+    process.exit(1);
+  }
 
   // Clear existing data
   console.log("Clearing existing data...");

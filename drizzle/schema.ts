@@ -317,3 +317,5 @@ export const itineraryItems = mysqlTable("itinerary_items", {
 
 export type ItineraryItem = typeof itineraryItems.$inferSelect;
 export type InsertItineraryItem = typeof itineraryItems.$inferInsert;
+
+
