@@ -9,7 +9,7 @@ import { SEO } from "@/components/SEO";
 import { CotswoldsNews } from "@/components/CotswoldsNews";
 import { WhatsOnToday } from "@/components/WhatsOnToday";
 import { CurrencyConverter } from "@/components/CurrencyConverter";
-import { CotswoldsRadioPlayer } from "@/components/CotswoldsRadioPlayer";
+
 import { AdBanner } from "@/components/AdSense";
 import { SearchAutocomplete } from "@/components/SearchAutocomplete";
 import { Link } from "wouter";
@@ -361,8 +361,7 @@ export default function Home() {
           {/* Currency Converter */}
           <CurrencyConverter />
           
-          {/* Cotswolds Radio Player */}
-          <CotswoldsRadioPlayer />
+
         </div>
       </section>
 

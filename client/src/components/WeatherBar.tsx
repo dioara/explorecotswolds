@@ -1,6 +1,6 @@
 import { trpc } from "@/lib/trpc";
 import { Cloud, CloudRain, CloudSnow, Sun, CloudDrizzle, CloudLightning } from "lucide-react";
-import { MiniRadioPlayer } from "@/components/MiniRadioPlayer";
+
 
 /**
  * Weather bar component that displays current Cotswolds weather and date
@@ -60,11 +60,6 @@ export function WeatherBar() {
                 <span>Loading weather...</span>
               </div>
             )}
-          </div>
-
-          {/* Mini Radio Player */}
-          <div className="hidden md:flex">
-            <MiniRadioPlayer />
           </div>
 
           {/* Date */}
