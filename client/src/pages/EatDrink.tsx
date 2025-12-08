@@ -37,7 +37,7 @@ export default function EatDrink() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/cotswolds_dining_restaurant.png')" }}
+          style={{ backgroundImage: "url('/images/eat-drink-hero.jpg')" }}
         >
           <div className="absolute inset-0 gradient-overlay"></div>
         </div>
