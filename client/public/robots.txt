@@ -1,0 +1,11 @@
+# robots.txt for explorehull.com
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://explorehull.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
